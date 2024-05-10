@@ -6,4 +6,5 @@ export const styles = {
   button: "items-center justify-center w-14 h-14 rounded-md bg-green-400",
   buttonText: "text-gray-50 text-2xl",
   form: "w-full flex-row mt-4 mb-11",
+  listEmptyText: "text-white text-sm text-center",
 };
