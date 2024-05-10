@@ -7,8 +7,8 @@ export function Home() {
     console.log("Voce clicou aqui");
   }
 
-  function handleParticipantRemove() {
-    console.log("Voce clicou em remover o participant");
+  function handleParticipantRemove(name: string) {
+    console.log(`Voce clicou em remover o participant ${name}`);
   }
 
   return (
@@ -31,7 +31,10 @@ export function Home() {
         </TouchableOpacity>
       </View>
 
-      <Participant name="Guilherme" onRemove={handleParticipantRemove} />
+      <Participant
+        name="Guilherme"
+        onRemove={() => handleParticipantRemove("Guilherme")}
+      />
     </View>
   );
 }
