@@ -26,8 +26,9 @@ export function Home() {
           <Text className={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
-      <Participant />
-      <Participant />
+
+      <Participant name="Guilherme" />
+      <Participant name="José" />
     </View>
   );
 }
